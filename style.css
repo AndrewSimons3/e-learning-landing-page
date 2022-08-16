@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--darkblue: #666ca3;
+	--almostBlack: #13183f;
+	--gray: #83869a;
+	--hotPink: #f74780;
+	--pink: #ffa7c3;
+	--white: #ffffff;
+	--linear1: linear-gradient(#ff6f48, #f02aa6);
+	--linear2: linear-gradient(#4851ff, #f02aa6);
+}
+
+
+body {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	background-color: #fff;
+	height: 100vh;
+}
+
+.container {
+	padding: 1.5rem 10rem;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn {
+	width: 167px;
+	height: 56px;
+	border-radius: 50px;
+	border: none;
+	font-size: 18px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.heading-btn {
+	background-color: var(--almostBlack);
+	color: var(--white);
+}
+
+.heading-btn:hover {
+	background-color: var(--darkblue);
+}
+
+.hero-page {
+	display: flex;
+	height: 100vh;
+}
+
+.hero-content {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.hero-image {
+	width: 50%;
+	position: relative;
+}
+
+.hero-image img {
+	position: absolute;
+	bottom: 75px;
+	z-index: -1;
+}
+
+.hero-content h1 {
+	font-size: 52px;
+}
+
+.hero-btn {
+	margin-bottom: 60px;
+	background: linear-gradient(to bottom, #ff6f48, #f02aa6);
+	color: var(--white);
+  transition: all .3s ease;
+}
+
+.hero-btn:hover {
+	background: linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.5),
+			rgba(255, 255, 255, 0.5)
+		),
+		linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+
+/* ******* MEDIA QUERY ********* */
+
+@media only screen and (min-width: 1500px) {
+	.hero-content {
+		width: 500px;
+	}
+}
